@@ -1,0 +1,43 @@
+<html>
+    <head>
+    <style>
+        h3{text-align: center;}
+        p{text-align: center;}
+        div{text-align: center;}
+        input{text-align: center;}
+    </style>
+        <h3 style="border: 5px;" >
+            PUNE HOUSE RENTS
+        </h3>
+    <body style="background-color:rgb(106, 106, 180);">
+        <h3> PUNE HOUSE RENT PREDICTION</h3>
+        <form style="text-align:center" action="/rent" method="post">
+            <h3>seller_type('AGENT':0, 'OWNER':1, 'BUILDER':2):</h3>
+            <input type="text" name="st"><br>
+            <h3>bedroom(1-4):</h3>
+            <input type="text" name="bed"><br>
+            <h3>layout_type('BHK':1, 'RK':0):</h3>
+            <input type="text" name="lt"><br>
+            <h3>property_type('Apartment':0,
+            'Studio Apartment': 1,
+            'Independent House': 2,
+            'Independent Floor': 3,
+            'Villa': 4,
+            'Penthouse': 5):</h3>
+            <input type="text" name="pt"><br>
+            <h3>locality(1-245):</h3>
+            <input type="text" name="loc"><br>
+            <h3>area:</h3>
+            <input type="text" name="area"><br>
+            <h3>furnish_type('Unfurnished':0, 'Semi-Furnished':1, 'Furnished':2):</h3>
+            <input type="text" name="ft"><br>
+
+            <h3><input type="submit"></h3>
+    </form>
+    <h2 style="text-align:center;""color: blue;" > 
+        From above information your rent will be =
+        {{prediction}}
+    </h2>
+    </body>
+    </head>
+</html>
